@@ -167,7 +167,9 @@ connecting.close()
 
 # If you want to challenge yourself here -- this function definition (what goes under the def statement) CAN be written in one line! Definitely, definitely fine to write it with multiple lines, too, which will be much easier and clearer.
 
-
+def get_twitter_users(screen):
+	regex_t = '@([A-Za-z0-9_]*)'
+	return set(re.findall(regex_t, screen))
 
 
 #########
